@@ -1,31 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   text-align: center;
+  background-color: black;
+}
+
+.main {
+  padding: 10px;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  background: #f5f7fb;
+}
+
+.right-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 170px;
+  border-bottom-left-radius: 100%;
+  background-color: rgb(255, 250, 209, 0.5);
+}
+
+.left-corner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 140px;
+  border-top-right-radius: 100%;
+  background-color: rgb(222, 235, 248, 0.5);
 }
 
 /* container */
 
 .container {
-  width: 70%;
-  margin: 0 auto;
+  width: 90%;
+
   text-align: left;
+  transform: translate(70px);
+  padding-top: 40px;
 }
 
 .horizontal {
-  border-top: 2px solid black;
-  width: 100%;
+  border-top: 2px solid #d6dbf5;
+  width: 80%;
   margin: 20px 0;
 }
 
 .que p {
   margin-bottom: 20px;
   margin-left: 23px;
-  font-size: 20px;
+  font-size: 15px;
+  color: #293264;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .options {
@@ -33,10 +70,13 @@ body {
 }
 
 .que label {
-  border: 1px solid black;
-  padding: 7px;
-  border-radius: 4px;
+  border: 1.4px solid #b6bcd7;
+  padding: 4px 25px;
+  border-radius: 12px;
   cursor: pointer;
+  font-size: 14px;
+  color: #293264;
+  font-weight: 400;
 }
 
 input[type="radio"] {
@@ -44,13 +84,37 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label {
-  background: pink !important;
+  background: #d6dbf5;
 }
 
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* button */
 
-#check-btn {
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
+button {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #4d5b9e;
+  color: white;
+  border: none;
+}
+
+.none {
+  display: none;
+}
+
+/* output */
+
+.output {
+  color: #293264;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 15px;
 }
